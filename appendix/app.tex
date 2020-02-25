@@ -1,0 +1,999 @@
+\appendix
+
+
+\newcommand{\dd}{d}
+\renewcommand{\imath}{i}
+\newcommand{\sech}{sech}
+\newcommand{\csch}{sech}
+\newcommand{\arcsinh}{arcsinh}
+\newcommand{\arccosh}{arcosh}
+\newcommand{\arctanh}{arctanh}
+\renewcommand{\imath}{i}
+%MAUCH
+
+%% CONTINUE: Monochromatic cow theorem.
+%% CONTINUE: 1 = 2.
+%% CONTINUE: Buchner Coefficients.
+%% CONTINUE: Mauch's theorem.
+%% CONTINUE: Unit conversions to beers.
+
+%% CONTINUE: Infinite space Green functions
+%% CONTINUE: Green functions for partial differential equations.
+%% CONTINUE: update the chapter in definite integrals
+
+%%
+%% Add the picture in the complex variables section.
+%%
+%% Beef up the linear algebra section with some material on matrices.
+%% Make sure to have all the background necessary for the Wronskian and tolo.
+%%
+%% Add the integral of $x \sin x$ etc.
+%%
+%% Add Bessel functions to the table of Taylor series.
+%%
+%% Add hyperbolic identities to the trig section.
+%%
+%% Are the range restrictions in the table of derivatives necessary?
+%%
+%% Verify the table of derivatives
+%%
+%% Add a table of differential equations.
+%%
+
+
+
+
+%%===========================================================================
+%%===========================================================================
+\chapter{Greek Letters}
+\raggedbottom 
+
+\paragraph{}
+The following table shows the greek letters, (some of them have two 
+typeset variants), and their corresponding Roman letters.
+
+\setlongtables
+\begin{longtable}{l|lll}
+  \emph{Name} & \emph{Roman} & \emph{Lower} & \emph{Upper} \\
+  \hline
+  alpha & a & $\alpha$ & \\
+  beta & b & $\beta$ & \\
+  chi & c & $\chi$ & \\
+  delta & d & $\delta$ & $\Delta$ \\
+  epsilon & e & $\epsilon$ & \\
+  epsilon (variant) & e & $\varepsilon$ & \\
+  phi & f & $\phi$ & $\Phi$ \\
+  phi (variant) & f & $\varphi$ & \\
+  gamma & g & $\gamma$ & $\Gamma$ \\
+  eta & h & $\eta$ & \\
+  iota & i & $\iota$ & \\
+  kappa & k & $\kappa$ & \\
+  lambda & l & $\lambda$ & $\Lambda$ \\
+  mu & m & $\mu$ & \\
+  nu & n & $\nu$ & \\
+  omicron & o & $o$ & \\
+  pi & p & $\pi$ & $\Pi$ \\
+  pi (variant) & p & $\varpi$ & \\
+  theta & q & $\theta$ & $\Theta$ \\
+  theta (variant) & q & $\vartheta$ & \\
+  rho & r & $\rho$ & \\
+  rho (variant) & r & $\varrho$ & \\
+  sigma & s & $\sigma$ & $\Sigma$ \\
+  sigma (variant) & s & $\varsigma$ & \\
+  tau & t & $\tau$ & \\
+  upsilon & u & $\upsilon$ & $\Upsilon$ \\
+  omega & w & $\omega$ & $\Omega$ \\
+  xi & x & $\xi$ & $\Xi$ \\
+  psi & y & $\psi$ & $\Psi$ \\
+  zeta & z & $\zeta$ & 
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\raggedbottom
+%%===========================================================================
+%%===========================================================================
+\chapter{Table of Derivatives}
+\label{table_of_derivatives}
+\raggedbottom 
+
+%% CONTINUE add page references
+
+Note: $c$ denotes a constant and $'$ denotes differentiation.
+
+\setlongtables
+\begin{longtable}{l}
+  $\displaystyle \frac{\dd}{\dd x} (f g) = \frac{\dd f}{\dd x} g + f \frac{\dd g}{\dd x}$\\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \, \frac{f}{g}
+  = \frac{f' g - f g'}{g^2}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} f^c = c f^{c-1}f'$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} f(g) = f'(g) g'$ \\
+  \\
+  $\displaystyle \frac{\dd^2}{\dd x^2} f(g) = f''(g) (g')^2 + f' g''$ \\
+  \\
+  $\displaystyle \frac{\dd^n}{\dd x^n}(f g) 
+  = \binom{n}{0} \frac{\dd^n f}{\dd x^n} g + 
+  \binom{n}{1} \frac{\dd^{n-1} f}{\dd x^{n-1}} \frac{\dd g}{\dd x} + 
+  \binom{n}{2} \frac{\dd^{n-2} f}{\dd x^{n-2}} \frac{\dd^2 g}{\dd x^2} + \cdots + 
+  \binom{n}{n} f \frac{\dd^n g}{\dd x^n}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \ln x = \frac{1}{|x|}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} c^x = c^x \ln c$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} f^g = g f^{g-1} \frac{\dd f}{\dd x}
+  + f^g \ln f \frac{\dd g}{\dd x}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \sin x = \cos x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \cos x = - \sin x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \tan x = \sec^2 x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \csc x = - \csc x \cot x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \sec x = \sec x \tan x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \cot x = - \csc^2 x$ \\ 
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \arcsin x = \frac{1}{\sqrt{1-x^2}}, \qquad
+  -\frac{\pi}{2} \leq \arcsin x \leq \frac{\pi}{2}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \arccos x = - \frac{1}{\sqrt{1-x^2}}, \qquad
+  0 \leq \arccos x \leq \pi$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \arctan x = \frac{1}{1+x^2}, \qquad
+  -\frac{\pi}{2} \leq \arctan x \leq \frac{\pi}{2}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \sinh x = \cosh x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \cosh x = \sinh x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \tanh x = \sech^2 x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \csch x = - \csch x \coth x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \sech x = - \sech x \tanh x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \coth x = - \csch^2 x$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \arcsinh x = \frac{1}{\sqrt{x^2+1}}$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \arccosh x = \frac{1}{\sqrt{x^2-1}}, \qquad
+  x > 1,\ \arccosh x > 0$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \arctanh x = \frac{1}{1-x^2}, \qquad
+  x^2 < 1$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \int_c^x f(\xi)\,d\xi = f(x)$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \int_x^c f(\xi)\,d\xi = - f(x)$ \\
+  \\
+  $\displaystyle \frac{\dd}{\dd x} \int_g^h f(\xi,x)\,d\xi 
+  = \int_g^h \frac{\partial f(\xi,x)}{\partial x}\,d\xi + f(h,x) h' - f(g,x) g'$
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+\raggedbottom
+%%===========================================================================
+%%===========================================================================
+\chapter{Table of Integrals}
+\label{table_of_integrals}
+\raggedbottom 
+
+\setlongtables
+\begin{longtable}{l}
+  $\displaystyle \int u \frac{\dd v}{\dd x}\,d x = u v - \int v \frac{\dd u}{\dd x}\,d x$ \\
+  \\
+  $\displaystyle \int \frac{f'(x)}{f(x)}\,d x = \log f(x)$ \\
+  \\
+  $\displaystyle \int \frac{f'(x)}{2 \sqrt{f(x)}}\,d x = \sqrt{f(x)}$ \\
+  \\
+  $\displaystyle \int x^\alpha\,d x = \frac{x^{\alpha+1}}{\alpha+1} 
+  \qquad \text{for }\alpha \neq = -1$ \\
+  \\
+  $\displaystyle \int \frac{1}{x}\,d x = \log x$ \\
+  \\
+  $\displaystyle \int e^{a x}\,d x = \frac{e^{a x}}{a}$ \\
+  \\
+  $\displaystyle \int a^{b x}\,d x = \frac{a^{b x}}{b \log a} 
+  \qquad \text{for }a > 0$ \\
+  \\
+  $\displaystyle \int \log x\,d x = x \log x - x$ \\
+  \\
+  $\displaystyle \int \frac{1}{x^2 + a^2}\,d x 
+  = \frac{1}{a} \arctan \frac{x}{a}$ \\
+  \\
+  $\displaystyle \int \frac{1}{x^2-a^2}\,d x = 
+  \begin{cases}
+    \frac{1}{2a} \log \frac{a-x}{a+x} \quad &\text{for }x^2 < a^2 \\
+    \frac{1}{2a} \log \frac{x-a}{x+a} \quad &\text{for }x^2 > a^2
+  \end{cases}$ \\
+  \\
+  $\displaystyle \int \frac{1}{\sqrt{a^2-x^2}}\,d x = \arcsin \frac{x}{|a|} 
+  = - \arccos \frac{x}{|a|} \qquad \text{for } x^2 < a^2$ \\
+  \\
+  $\displaystyle \int \frac{1}{\sqrt{x^2 \pm a^2}}\,d x 
+  = \log (x + \sqrt{x^2 \pm a^2})$ \\
+  \\
+  $\displaystyle \int \frac{1}{x \sqrt{x^2 - a^2}}\,d x 
+  = \frac{1}{|a|} \sec^{-1} \frac{x}{a}$ \\
+  \\
+  $\displaystyle \int \frac{1}{x \sqrt{a^2 \pm x^2}}\,d x 
+  = - \frac{1}{a} \log \left(
+    \frac{a + \sqrt{a^2 \pm x^2}}{x} \right)$ \\
+  \\
+  $\displaystyle \int \sin(a x)\,d x = - \frac{1}{a} \cos (a x)$ \\
+  \\
+  $\displaystyle \int \cos(a x)\,d x = \frac{1}{a} \sin (a x)$ \\
+  \\
+  $\displaystyle \int \tan(a x)\,d x = - \frac{1}{a} \log \cos (a x)$ \\
+  \\
+  $\displaystyle \int \csc(a x)\,d x = \frac{1}{a} \log \tan \frac{a x}{2}$ \\
+  \\
+  $\displaystyle \int \sec(a x)\,d x 
+  = \frac{1}{a} \log \tan \left( \frac{\pi}{4} + \frac{a x}{2}
+  \right)$\\
+  \\
+  $\displaystyle \int \cot(a x)\,d x = \frac{1}{a} \log \sin (a x)$ \\
+  \\
+  $\displaystyle \int \sinh(a x)\,d x = \frac{1}{a} \cosh (a x)$ \\
+  \\
+  $\displaystyle \int \cosh(a x)\,d x = \frac{1}{a} \sinh (a x)$ \\
+  \\
+  $\displaystyle \int \tanh(a x)\,d x = \frac{1}{a} \log \cosh (a x)$ \\
+  \\
+  $\displaystyle \int \csch(a x)\,d x = \frac{1}{a} \log \tanh \frac{a x}{2}$ \\
+  \\
+  $\displaystyle \int \sech(a x)\,d x 
+  = \frac{i}{a} \log \tanh \left( \frac{i \pi}{4} +
+    \frac{a x}{2} \right)$ \\
+  \\
+  $\displaystyle \int \coth(a x)\,d x = \frac{1}{a} \log \sinh (a x)$ \\
+  \\
+  $\displaystyle \int x \sin a x\,d x 
+  = \frac{1}{a^2} \sin a x - \frac{x}{a} \cos a x$ \\
+  \\
+  $\displaystyle \int x^2 \sin a x\,d x 
+  = \frac{2x}{a^2} \sin a x - \frac{a^2 x^2-2}{a^3} \cos a x$ \\
+  \\
+  $\displaystyle \int x \cos a x\,d x 
+  = \frac{1}{a^2} \cos a x + \frac{x}{a} \sin a x$ \\
+  \\
+  $\displaystyle \int x^2 \cos a x\,d x 
+  = \frac{2x \cos a x}{a^2} + \frac{a^2 x^2 - 2}{a^3} \sin a x$
+\end{longtable}
+
+
+
+
+
+
+\raggedbottom
+
+
+
+%%===============================
+\chapter{Algebra}
+\label{algebra_appendix}
+\index{algebra_appendix}
+\raggedbottom 
+\section{Quadratic equation}
+
+  The solutions of $ax^2+bx+c=0$ \\
+  are 
+\begin{equation*}
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation*}
+
+
+\section{Logarithms and exponentials}
+
+  \begin{equation*}   \ln(ab)=\ln a + \ln b    \end{equation*}
+  \begin{equation*}   e^{a+b} = e^ae^b    \end{equation*}
+  \begin{equation*}   \ln e^x = e^{\ln x} = x    \end{equation*}
+  \begin{equation*}   \ln(a^b) = b \ln a    \end{equation*}
+
+
+\section{Geometry, area, and volume}
+
+\noindent\begin{tabular}{ll}
+  area of a triangle of base $b$ and height $h$     & = $\frac{1}{2}bh$ \\
+  circumference of a circle of radius $r$           &= $2\pi r$ \\
+  area of a circle of radius $r$                    &= $\pi r^2$ \\
+  surface area of a sphere of radius $r$            &= $4\pi r^2$ \\
+  volume of a sphere of radius $r$                  &= $\frac{4}{3}\pi r^3$
+\end{tabular}
+
+\section{Trigonometry with a right triangle}
+
+\newcommand{\tikzAngleOfLine}{\tikz@AngleOfLine}
+  \def\tikz@AngleOfLine(#1)(#2)#3{%
+  \pgfmathanglebetweenpoints{%
+    \pgfpointanchor{#1}{center}}{%
+    \pgfpointanchor{#2}{center}}
+  \pgfmathsetmacro{#3}{\pgfmathresult}%
+  }
+\begin{figure}
+\begin{center}  \begin{tikzpicture}
+    \coordinate (A) at (4,3);
+    \coordinate (C) at (4,0);
+    \coordinate (B) at (0,0);
+\draw (A) node[left]{} -- (B) node[midway,above]{$C$} -- (C)node[midway,below]{$A$} -- (A)node[midway,right]{$B$};
+    \tikzAngleOfLine(B)(A){\AngleStartAB}
+    \tikzAngleOfLine(B)(C){\AngleEndAC}
+
+  \draw[red,-] (B)+(\AngleStartAB:1.5cm) arc (\AngleStartAB:\AngleEndAC:1.5 cm);
+    \node[circle] at ($(B)+({(\AngleStartAB+\AngleEndAC)/2}:1 cm)$) {$\theta$};
+
+\end{tikzpicture}
+\end{center}
+\caption{ Triangle}
+\end{figure}
+
+
+  \begin{equation*}
+ \sin\theta  =B /C \quad
+ \cos\theta = A/C \quad
+ \tan\theta = B/A
+ \end{equation*}
+
+Pythagorean theorem: $C^2=A^2+B^2$
+
+\section{Trigonometry with any triangle}
+
+
+%\newcommand{\tikzAngleOfLine}{\tikz@AngleOfLine}
+%  \def\tikz@AngleOfLine(#1)(#2)#3{%
+%  \pgfmathanglebetweenpoints{%
+%    \pgfpointanchor{#1}{center}}{%
+%    \pgfpointanchor{#2}{center}}
+%  \pgfmathsetmacro{#3}{\pgfmathresult}%
+%  }
+\begin{figure}
+\begin{center}  \begin{tikzpicture}
+    \coordinate (A) at (1,1);
+    \coordinate (B) at ($(A)+(25:3)$);
+    \coordinate (C) at ($(A)+(100:5)$);
+
+\draw (A) node[left]{$a$} -- (B) node[right]{$b$}node[midway,below]{$C$} -- (C)node[above]{$c$}node[midway,above]{$A$} -- (A)node[midway,left]{$B$};
+
+    \tikzAngleOfLine(A)(B){\AngleStartAB}
+    \tikzAngleOfLine(A)(C){\AngleEndAC}
+
+    \tikzAngleOfLine(B)(A){\AngleStartBA}
+    \tikzAngleOfLine(B)(C){\AngleEndBC}
+
+    \tikzAngleOfLine(C)(A){\AngleStartCA}
+    \tikzAngleOfLine(C)(B){\AngleEndCB}
+
+
+    \draw[red,-] (A)+(\AngleStartAB:1cm) arc (\AngleStartAB:\AngleEndAC:1 cm);
+    \node[circle] at ($(A)+({(\AngleStartAB+\AngleEndAC)/2}:0.5 cm)$) {$\alpha$};
+
+    \draw[red,-] (B)+(\AngleStartBA:1cm) arc (\AngleStartBA:\AngleEndBC:1 cm);
+    \node[circle] at ($(B)+({(\AngleStartBA+\AngleEndBC)/2}:0.5 cm)$) {$\beta$};
+
+    \draw[red,-] (C)+(\AngleStartCA:1cm) arc (\AngleStartCA:\AngleEndCB:1 cm);
+    \node[circle] at ($(C)+({(\AngleStartCA+\AngleEndCB)/2}:0.5 cm)$) {$\gamma$};
+
+\end{tikzpicture}
+\end{center}
+\caption{ Triangle}
+\end{figure}
+
+Law of Sines:
+  \begin{equation*} \frac{\sin\alpha}{A}=\frac{\sin\beta}{B}=\frac{\sin\gamma}{C} \end{equation*}
+
+\noindent Law of Cosines:
+  \begin{equation*} C^2 = A^2 + B^2 - 2AB \cos \gamma \end{equation*}
+
+
+%%============================================================================
+\chapter{Trigonometric Identities}
+\label{trigonometric_identities}
+\index{trigonometric identities}
+\raggedbottom 
+\section{Circular Functions}
+
+\paragraph{Pythagorean Identities}
+\[      \sin^2 x + \cos^2 x = 1, \qquad
+1 + \tan^2 x = \sec^2 x, \qquad
+1 + \cot^2 x = \csc^2 x \]
+
+\paragraph{Angle Sum and Difference Identities}
+\begin{align*}
+  &\sin(x+y) = \sin x \cos y + \cos x \sin y \\
+  &\sin(x-y) = \sin x \cos y - \cos x \sin y \\
+  &\cos(x+y) = \cos x \cos y - \sin x \sin y \\
+  &\cos(x-y) = \cos x \cos y + \sin x \sin y 
+\end{align*}
+
+\paragraph{Function Sum and Difference Identities}
+\begin{align*}
+  &\sin x + \sin y = 2 \sin \frac{1}{2}(x+y) \cos \frac{1}{2}(x-y) \\
+  &\sin x - \sin y = 2 \cos \frac{1}{2}(x+y) \sin \frac{1}{2}(x-y) \\
+  &\cos x + \cos y = 2 \cos \frac{1}{2}(x+y) \cos \frac{1}{2}(x-y) \\
+  &\cos x - \cos y =-2 \sin \frac{1}{2}(x+y) \sin \frac{1}{2}(x-y) 
+\end{align*}
+
+
+\paragraph{Double Angle Identities}
+\[\sin 2x = 2 \sin x \cos x, \qquad \cos 2x = \cos^2 x - \sin^2 x \]
+
+
+\paragraph{Half Angle Identities}
+\[\sin^2 \frac{x}{2} = \frac{1-\cos x}{2}, \qquad
+\cos^2 \frac{x}{2} = \frac{1+\cos x}{2} \]
+
+\paragraph{Function Product Identities}
+\begin{align*}
+  &\sin x \sin y = \frac{1}{2} \cos(x-y) - \frac{1}{2} \cos(x+y) \\
+  &\cos x \cos y = \frac{1}{2} \cos(x-y) + \frac{1}{2} \cos(x+y) \\
+  &\sin x \cos y = \frac{1}{2} \sin(x+y) + \frac{1}{2} \sin(x-y) \\
+  &\cos x \sin y = \frac{1}{2} \sin(x+y) - \frac{1}{2} \sin(x-y) 
+\end{align*}
+
+\paragraph{Exponential Identities}
+\[      
+e^{\imath x} = \cos x + \imath \sin x, \qquad
+\sin x = \frac{e^{\imath x} - e^{-\imath x}}{\imath 2}, \qquad
+\cos x = \frac{e^{\imath x} + e^{-\imath x}}{2} 
+\]
+
+%%---------------------------------------------------------------------------
+\section{Hyperbolic Functions}
+
+\paragraph{Exponential Identities}
+\[ \sinh x = \frac{e^x - e^{-x}}{2}, \qquad \cosh x = \frac{e^x + e^{-x}}{2}\]
+\[ \tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}} \]
+
+\paragraph{Reciprocal Identities}
+\[ \csch x = \frac{1}{\sinh x}, \qquad \sech x = \frac{1}{\cosh x}, \qquad
+\coth x = \frac{1}{\tanh x} \]
+
+\paragraph{Pythagorean Identities}
+\[ \cosh^2 x - \sinh^2 x = 1, \qquad \tanh^2 x + \sech^2 x = 1 \]
+
+\paragraph{Relation to Circular Functions}
+\begin{alignat*}{2}
+  \sinh(\imath x) &= \imath \sin x &\qquad \sinh x &= -\imath \sin(\imath x)
+  \\
+  \cosh(\imath x) &= \cos x &\qquad \cosh x &= \cos(\imath x)
+  \\
+  \tanh(\imath x) &= \imath \tan x &\qquad \tanh x &= - \imath \tan(\imath x)
+\end{alignat*}
+
+\paragraph{Angle Sum and Difference Identities}
+\begin{align*}
+  &\sinh(x \pm y) = \sinh x \cosh y \pm \cosh x \sinh y \\
+  &\cosh(x \pm y) = \cosh x \cosh y \pm \sinh x \sinh y \\
+  &\tanh(x \pm y) = \frac{\tanh x \pm \tanh y}{1 \pm \tanh x \tanh y}
+  = \frac{\sinh 2x \pm \sinh 2y}{\cosh 2x \pm \cosh 2y} \\
+  &\coth(x \pm y) = \frac{1 \pm \coth x \coth y}{\coth x \pm \coth y}
+  = \frac{\sinh 2x \mp \sinh 2y}{\cosh 2x - \cosh 2y}
+\end{align*}
+
+\paragraph{Function Sum and Difference Identities}
+\begin{align*}
+  &\sinh x \pm \sinh y = 2 \sinh \frac{1}{2}(x \pm y) 
+  \cosh \frac{1}{2}(x \mp y) \\
+  &\cosh x + \cosh y = 2 \cosh \frac{1}{2}(x+y) \cosh \frac{1}{2}(x-y) \\
+  &\cosh x - \cosh y = 2 \sinh \frac{1}{2}(x+y) \sinh \frac{1}{2}(x-y) \\
+  &\tanh x \pm \tanh y = \frac{\sinh(x \pm y)}{\cosh x \cosh y} \\
+  &\coth x \pm \coth y = \frac{\sinh(x \pm y)}{\sinh x \sinh y} \\
+\end{align*}
+
+
+\paragraph{Double Angle Identities}
+\[\sinh 2x = 2 \sinh x \cosh x, \qquad \cosh 2x = \cosh^2 x + \sinh^2 x \]
+
+
+\paragraph{Half Angle Identities}
+\[\sinh^2 \frac{x}{2} = \frac{\cosh x - 1}{2}, \qquad
+\cosh^2 \frac{x}{2} = \frac{\cosh x + 1}{2} \]
+
+\paragraph{Function Product Identities}
+\begin{align*}
+  &\sinh x \sinh y = \frac{1}{2} \cosh(x+y) - \frac{1}{2} \cosh(x-y) \\
+  &\cosh x \cosh y = \frac{1}{2} \cosh(x+y) + \frac{1}{2} \cosh(x-y) \\
+  &\sinh x \cosh y = \frac{1}{2} \sinh(x+y) + \frac{1}{2} \sinh(x-y) \\
+\end{align*}
+
+See Figure~\ref{sicotanh} for plots of the hyperbolic
+circular functions.
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[height=1.5in]{appendix/sicotanh}
+%\begin{tikzpicture}
+%\begin{axis}[xmin=-3,xmax=3,grid=major,legend entries={$\cosh$,[red]$\sinh$,$\tanh$}]]
+%\addplot [color=red,mark=none,smooth] {(exp(x)+exp(-x))/2};
+%\addplot [color=blue,mark=none,smooth] {(exp(x)-exp(-x))/2};
+%\addplot [color=green,mark=none,smooth]{(exp(x)-exp(-x))/(exp(x)+exp(-x))};
+%\end{axis}
+%\end{tikzpicture}
+  \end{center}
+  \caption{$\cosh x$, $\sinh x$ and then $\tanh x$}
+  \label{sicotanh}
+\end{figure}
+
+
+
+
+
+\raggedbottom
+%%===========================================================================
+\chapter{Formulas from Linear Algebra}
+\label{appendix formulas from linear algebra}
+\flushbottom
+
+\paragraph{Kramer's Rule.}
+\index{Kramer's rule}
+
+Consider the matrix equation
+\[ A \vec{x} = \vec{b}. \]
+This equation has a unique solution if and only if $\det(A) \neq 0$.  
+If the determinant vanishes then there are either no solutions or an 
+infinite number of solutions.
+If the determinant is nonzero, the solution for each $x_j$ can be written
+\[ x_j = \frac{\det A_j}{\det A} \]
+where $A_j$ is the matrix formed by replacing the $j^{t h}$ column of $A$ 
+with $b$.
+
+
+  The matrix equation
+  \[ \begin{pmatrix}
+    1       &       2 \\
+    3       &       4 
+  \end{pmatrix}
+  \begin{pmatrix}
+    x_1 \\
+    x_2
+  \end{pmatrix}
+  = 
+  \begin{pmatrix}
+    5 \\
+    6
+  \end{pmatrix},
+  \]
+  has the solution
+  \[ x_1 = \frac{
+    \begin{vmatrix}
+      5       &       2 \\
+      6       &       4
+    \end{vmatrix} }{
+    \begin{vmatrix}
+      1       &       2 \\
+      3       &       4
+    \end{vmatrix} }
+  = \frac{8}{-2} = -4, \qquad
+  x_2 = \frac{
+    \begin{vmatrix}
+      1       &       5 \\
+      3       &       6
+    \end{vmatrix} }{
+    \begin{vmatrix}
+      1       &       2 \\
+      3       &       4
+    \end{vmatrix} }
+  = \frac{-9}{-2} = \frac{9}{2}.
+  \]
+
+
+
+
+
+
+
+
+
+
+
+
+
+\raggedbottom
+%%=============================================================================
+\chapter{Vector Analysis}
+\flushbottom
+
+\paragraph{Rectangular Coordinates}
+
+\[
+f = f(x,y,z), \qquad \vec{g} = g_x \mathbf{i} + g_y \mathbf{j} + g_z \mathbf{k}
+\]
+
+\[
+\nabla f = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} + \frac{\partial f}{\partial z} \mathbf{k}
+\]
+
+\[
+\nabla \cdot \vec{g} = \frac{\partial g_x}{\partial x} + \frac{\partial g_y}{\partial y}
++ \frac{\partial g_z}{\partial z}
+\]
+
+\[
+\nabla \times \vec{g} =
+\begin{vmatrix}
+  \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+  \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+  g_x & g_y & g_z
+\end{vmatrix}
+\]
+
+\[
+\Delta f = \nabla^2 f = \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2}
+\]
+
+
+\paragraph{Spherical Coordinates}
+
+\[
+x = r \cos \theta \sin \phi, \qquad
+y = r \sin \theta \sin \phi, \qquad
+z = r \cos \phi
+\]
+
+\[
+f = f(r, \theta, \phi), \qquad \vec{g} = 
+g_r \mathbf{r} + g_\theta \boldsymbol{\theta} + g_\phi \boldsymbol{\phi}
+\]
+
+
+%%CONTINUE
+
+%%\paragraph{Cylindrical Coordinates}
+
+
+%%CONTINUE
+
+
+
+\paragraph{Divergence Theorem.}
+\[
+\iint \nabla \cdot \mathbf{u} \,\dd x \,\dd y 
+= \oint \mathbf{u} \cdot \mathbf{n} \,\dd s
+\]
+
+\paragraph{Stoke's Theorem.}
+\[
+\iint (\nabla \times \mathbf{u}) \cdot \,\dd \mathbf{s}
+= \oint \mathbf{u} \cdot \,\dd \mathbf{r}
+\]
+
+%% CONTINUE
+
+
+
+
+
+
+\raggedbottom
+%%=============================================================================
+\chapter{Physics}
+\label{chapter spherical chicken}
+\index{spherical chicken}
+\index{chicken!spherical}
+\flushbottom
+
+
+In order to reduce processing costs, a chicken farmer wished to acquire
+a plucking machine.  Since there was no such machine on the market, 
+he hired a mechanical engineer to design one.  After extensive
+research and testing, the professor concluded that it was impossible to 
+build such a machine with current technology.  The farmer was disappointed,
+but not wanting to abandon his dream of an automatic plucker, he consulted
+a physicist.  After a single afternoon of work, the physicist reported 
+that not only could a plucking machine be built, but that the design 
+was simple.  The elated farmer asked him to describe his method.
+The physicist replied, ``First, assume a spherical chicken \ldots''.
+
+The problems in this text will implicitly make certain simplifying 
+assumptions about chickens.  For example, a problem might assume 
+a perfectly elastic, frictionless, spherical chicken.  In two-dimensional
+problems, we will assume that chickens are circular.
+
+
+
+\chapter{Sophisms}
+\label{chapter  proofs}
+\index{sophisms}
+\flushbottom
+
+
+Let $x$ and $y$ be equal non-zero quantities
+\begin{equation*}
+x=y
+\end{equation*}
+Multiply through by $x$
+\begin{equation*}
+x^2 = x y 
+\end{equation*}
+ Subtract 
+ \begin{equation*}
+x^2 - y^2 = x y - y^2 
+\end{equation*}
+Factor both sides
+\begin{equation*}
+(x - y)(x + y) = y (x - y) 
+\end{equation*}
+ Divide out
+ \begin{equation*}
+\frac{(x - y)(x + y)}{(x - y)} = \frac{y(x - y)}{(x - y)} 
+\end{equation*}
+ Cancel out 
+\begin{equation*}
+x + y = y 
+\end{equation*}
+Observing that  $x=y$
+\begin{equation*}
+y + y = y 
+\end{equation*}
+Combine like terms on the left
+\begin{equation*}
+2 y =y 
+\end{equation*}
+Divide by the non-zero $y$ 
+\begin{equation*}
+2=1
+\end{equation*}
+\begin{flushright}
+ Q.E.D.
+\end{flushright}
+
+Also consider
+\begin{equation*}
+1 = \sqrt{1} = \sqrt{(-1)(-1)} = \sqrt{-1}\sqrt{-1}=i \cdot i = -1.
+\end{equation*}
+\raggedbottom
+%%=============================================================================
+\chapter{Glossary}
+\flushbottom
+
+
+\paragraph{}
+
+The poet-philosopher Steve Martin once said:
+\begin{quotation}
+``Oeuf'' means egg, ``chapeau'' means hat. It's like those French
+have a different word for everything.
+\end{quotation}
+
+Phrases often have different meanings in mathematics than in everyday usage.
+Here I have collected definitions of some mathematical terms which might
+confuse the novice.
+
+
+\begin{description}
+\item{\textbf{beyond the scope of this text:}}
+  Beyond the comprehension of the author.
+\item{\textbf{difficult:}}
+  Essentially impossible.  Note that mathematicians never refer to problems 
+  they have solved as being difficult.  This would either be boastful, 
+  (claiming that you can solve difficult problems), or self-deprecating,
+  (admitting that you found the problem to be difficult).
+\item{\textbf{interesting:}}
+  This word is grossly overused in math and science.
+  It is often used to describe any work that the author has done, regardless 
+  of the work's significance or novelty.
+  It may also be used as a synonym for difficult.
+  It has a completely different meaning when used by the non-mathematician.
+  When I tell people that I am a mathematician they typically respond 
+  with, ``That must be interesting.'', which means, ``I don't know 
+  anything about math or what mathematicians do.''  I typically answer,
+  ``No.  Not really.''  
+\item{\textbf{non-obvious} or \textbf{non-trivial:}}
+  Nearly impossible.
+\item{\textbf{one can prove that \ldots:}}
+  The ``one'' that proved it was a genius like Gauss.  The phrase literally 
+  means ``you haven't got a chance in hell of proving that \ldots''
+\item{\textbf{simple:}}
+  Mathematicians communicate their prowess to colleagues and students by 
+  referring to all problems as simple or trivial.  If you ever become a math
+  professor, introduce every example as being ``really quite trivial.''
+  \footnote{For even more fun say it in your best Elmer Fudd accent.
+    ``This next pwobwem is weawy quite twiviaw''.}
+\end{description}
+
+
+
+\paragraph{}
+Here are some less interesting words and phrases that you are 
+probably already familiar with.
+
+\begin{description}
+\item{\textbf{corollary:}}
+  a proposition inferred immediately from a proved proposition with little 
+  or no additional proof
+\item{\textbf{lemma:}}
+  an auxiliary proposition used in the demonstration of another proposition
+\item{\textbf{theorem:}}
+  a formula, proposition, or statement in mathematics or logic deduced or 
+  to be deduced from other formulas or propositions
+\end{description}
+
+
+\chapter{Notation and Units}
+\label{notationtable}
+
+\section{SI base units}
+
+\noindent\begin{tabular}{|l|l|l|}
+\hline
+quantity	& unit	& symbol \\
+\hline
+distance	& meter, m	& $d, L, x, \Delta{}x$ \\
+time	& second, s	& $t, \Delta{}t$ \\
+mass	& kilogram, kg	& $m$ \\
+temperature	& kelvin, K	& $T$ \\
+amount of substance & mole, mol & $N$ \\
+electric current & ampere, A & $I$ \\
+luminous intensity & candela, cd & $I$ \\
+\hline
+\end{tabular}
+
+\section{SI derived units}
+
+\noindent\begin{tabular}{|l|l|l|}
+\hline
+quantity	& unit	& typical symbol \\
+\hline
+distance	& meter, m	& $x, \Delta{}x$ \\
+time	& second, s	& $t, \Delta{}t$ \\
+mass	& kilogram, kg	& $m$ \\
+density	& $\kgunit/\munit^3$	& $\rho$  \\
+force	& newton, 1 N=$1\ \kgunit\unitdot\munit/\sunit^2$	& $F$ \\
+velocity	& m/s	& $v$ \\
+acceleration	& $\munit/\sunit^2$	& $a$ \\
+gravitational field	& $\junit/\kgunit\unitdot\munit$ or $\munit/\sunit^2$	& $g$ \\
+energy	& joule, J	& $E$ (also electric field)\\
+momentum	& $\kgunit\unitdot\munit/\sunit$	& $p$ \\
+angular momentum	& $\kgunit\unitdot\munit^2/\sunit$ or $\junit\unitdot\sunit$	& $L$ (also inductance)\\
+power	& watt, 1 W = 1 J/s	& $P$ (also pressure) \\
+pressure & 1 Pa=$1\ \nunit/\munit^2$	& $P$ (also power)\\
+
+period	& s	& $T$ (also temperature)\\
+wavelength	& m	& $\lambda$ \\
+frequency	& $\zu{s}^{-1}$ or Hz	& $f$ \\
+charge	& coulomb, C	& $q$ \\
+voltage	& volt, 1 V = 1 J/C	& $V$ \\
+current	& ampere, 1 A = 1 C/s	& $I$ \\
+resistance	& ohm, 1 $\Omega$ = 1 V/A	& $R$ \\
+capacitance	& farad, 1 F = 1 C/V	& $C$ \\
+inductance	& henry, 1 H = 1 $\zu{V}\unitdot\sunit/\zu{A}$	& $L$ (also angular momentum)\\
+electric field	& V/m or N/C	& $E$ (also energy)\\
+magnetic field	& tesla, 1 T = 1 $\nunit\unitdot\sunit/\zu{C}\unitdot\munit$	& $B$ \\
+focal length	& m	& $f$ \\
+magnification	& unitless	& $M$ \\
+index of refraction	& unitless	& $n$ \\
+electron wavefunction	& $\munit^{-3/2}$	& $\Psi$ \\
+\hline
+\end{tabular}
+ 
+\chapter{Fundamental constants}
+\noindent\begin{tabular}{|l|l|}
+\hline
+gravitational constant	& $G=6.67\times10^{-11}\ \junit\unitdot\munit/\kgunit^2$ \\
+Boltzmann constant      & $k=1.38\times10^{-23}\ \junit/\kunit$\\
+Coulomb constant	& $k=8.99\times10^9\ \junit\unitdot\munit/\zu{C}^2$ or $\nunit\unitdot\munit^2/\zu{C}^2$ \\
+quantum of charge	& $e=1.60\times10^{-19}\ \zu{C}$ \\
+speed of light	& $c=3.00\times10^8\ \zu{m/s}$ \\
+Planck's constant	& $h=6.63\times10^{-34}\ \junit\unitdot\sunit$ \\
+\hline
+\end{tabular}
+
+\noindent Note the use of the same notation, $k$, for both the Boltzmann constant and the Coulomb constant.
+
+\section{Subatomic particles}\label{subatomicparticlesdata}
+\noindent\begin{tabular}{|l|l|l|l|}
+\hline
+particle	& mass (kg)	& charge	& radius (fm) \\
+\hline
+electron	& $9.109\times10^{-31}$	& $-e$	& $\lesssim0.01$\\
+proton	& $1.673\times10^{-27}$	& $+e$	& $\sim{}1.1$\\
+neutron	& $1.675\times10^{-27}$	& 0		& $\sim{}1.1$\\
+neutrino	& $\sim10^{-39}$ kg ?	& 0		& 	?\\
+\hline
+\end{tabular}
+
+\noindent{}The radii of protons and neutrons can only be given
+approximately, since they have fuzzy surfaces. For
+comparison, a typical atom is about a million fm in radius.
+ %
+
+
+
+
+\section{Earth, moon, and sun}
+\noindent\begin{tabular}{|l|l|l|l|}
+\hline
+body		&	mass (kg)		&	radius (km)	&	radius of orbit (km) \\
+\hline
+earth	&	$5.97\times10^{24}$	&	$6.4\times10^{3}$	&	$1.49\times10^{8}$\\
+moon	&	$7.35\times10^{22}$	&	$1.7\times10^{3}$	&	$3.84\times10^{5}$\\
+sun		&	$1.99\times10^{30}$	&	$7.0\times10^{5}$	&	---\\
+\hline
+\end{tabular}
+ %
+
+ \chapter{Metric prefixes}\label{metricprefixestable}\index{metric system!prefixes}
+ \noindent\begin{tabular}{|l|l|l|}
+ \hline
+
+Symbol & Prefix & $10^n$ \\
+\hline
+P & peta & $10^{15}$ \\
+ T & tera & $10^{12}$ \\
+ G     & giga                  & $10^9$ \\
+ M	& mega			& $10^6$ \\
+ k	& kilo			& $10^3$ \\
+ m	& milli		& $10^{-3}$ \\
+ $\mu$- (Greek mu) & micro	& $10^{-6}$ \\
+ n	& nano			& $10^{-9}$ \\
+ p	& pico			& $10^{-12}$ \\
+ f	& femto		& $10^{-15}$ \\
+ \hline
+ \end{tabular}
+
+\noindent{}
+Each prefix name has an associated symbol which can be used in combination with the symbols for units of measure. Thus, the ``kilo-'' symbol, k, can be used to produce km, kg, and kW, (kilometre, kilogram, and kilowatt).
+
+ \noindent{}Note that the exponents go in steps of three.
+ The exception is centi-, $10^{-2}$, which is used only in the centimeter, and this
+ doesn't require memorization, because a cent is $10^{-2}$ dollars.
+%  %
+
+ \chapter{Nonmetric units}\label{nonmetricunits}\index{units!nonmetric}
+ \noindent Nonmetric units in terms of metric ones:\\
+ \noindent\begin{tabular}{|l|l|}
+ \hline
+ 1 inch	&= 25.4 mm (by definition)\\
+ 1 pound (lb)	&= 4.5 newtons of force\\
+ 1 scientific calorie &= 4.18 J\\
+ 1 nutritional calorie &= $4.18\times10^3$ J\\
+ 1 gallon &= $3.78\times10^3\ \zu{cm}^3$\\
+ 1 horsepower &= 746 W\\
+ \hline
+ \end{tabular}
+
+ \noindent{}The pound is a unit of force, so it converts to newtons, not kilograms.
+ A one-kilogram mass at the earth's surface experiences a gravitational force of
+ $(1\ \kgunit)(9.8\ \munit/\sunit^2)=9.8\ \zu{N}=2.2\ \zu{lb}$. The nutritional
+ information on food packaging
+ typically gives energies in units of calories, but those so-called calories are
+ really kilocalories.
+
+ \noindent Relationships among U.S. units:\\
+ \noindent\begin{tabular}{|l|l|}
+ \hline
+ 1 foot (ft)	&= 12 inches\\
+ 1 yard (yd) &= 3 feet \\
+ 1 mile (mi) &= 5280 feet\\
+ 1 ounce (oz) &= 1/16 pound\\
+ \hline
+\end{tabular}
+
+ \raggedbottom
