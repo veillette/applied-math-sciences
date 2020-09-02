@@ -2,7 +2,7 @@
 \label{ch:scaling}
 
 \piccaption{Life would be very different if you were the size of an insect.}{\label{fig:bee-flying}}
-\parpic[r]{\includegraphics[width=0.6\textwidth]{./scaling/figs/bee-flying_1.jpg}}
+\parpic[r]{\includegraphics[width=0.6\textwidth]{./scaling/figs/bee-flying}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}\label{sec:intro-to-scaling}
@@ -18,7 +18,7 @@ you already do. The only mathematical technique you really
 need is the humble conversion, applied to area and volume.
 
 \piccaption{An unusually large amoeba}
-\parpic[r]{\includegraphics[width=0.25\textwidth]{./introduction/figs/big-amoeba}}
+\parpic[r]{\includegraphics[width=0.25\textwidth]{./scaling/figs/big-amoeba}}
 
 
 \index{area!operational definition}
@@ -77,7 +77,7 @@ and yards. (One foot is 12 inches, and one yard is three feet.)
 
 \begin{figure}
 \centering
-\includegraphics[width=0.65\textwidth]{./introduction/figs/yd2-yd3}
+\includegraphics[width=0.65\textwidth]{./scaling/figs/yd2-yd3}
 \caption{ \qquad Visualizing conversions of area and volume using traditional U.S. units.}
 \label{yd2-yd3}
 \end{figure}
@@ -101,7 +101,7 @@ accurately using the symbolic method.
 
 % In NP, it's a widecaption, here. SN, the odd/even detection fails, and it's a narrow figure, later on.
 \begin{center}
-\includegraphics[width=0.4\textwidth]{./introduction/figs/galileo_1.jpg}
+\includegraphics[width=0.4\textwidth]{./scaling/figs/galileo.png}
 \end{center}
 %\begin{figure}
 
@@ -270,7 +270,7 @@ photograph of the other, then the planks would be strong
 able to support their own weight.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{./scaling/figs/galileo-plank}
 \end{center}
@@ -379,12 +379,9 @@ All three clay rods
  the strength compared to the smallest
  one.
 
-
-
 \vspace{1.5mm}
 
 \subsection{Scaling of area and volume for irregularly shaped objects}
-
 
 You probably are not going to believe Galileo's claim that
 this has deep implications for all of nature unless you can
@@ -399,15 +396,13 @@ smaller egg-shaped objects with half the length.
 \piccaption{\quad Violin }
 \parpic[l]{\includegraphics[width=0.2\textwidth]{./scaling/figs/violin} \label{violin}}
 
-
-
 \vspace{1.5mm}
 
 Is it always true that something half the size has one
 quarter the surface area and one eighth the volume, even if
 it has an irregular shape? Take the example of a child's
 violin. Violins are made for small children in smaller size
-to accomodate their small bodies. Figure \ref{violin} shows
+to accommodate their small bodies. Figure \ref{violin} shows
 a full-size violin, along with two
 violins made with half and 3/4 of the normal length.\footnote{The customary
 terms ``half-size'' and ``3/4-size'' actually don't describe the
@@ -517,8 +512,7 @@ Correct solution \#1: Area scales in proportion to the
 square of the linear dimensions, so the larger triangle has
 four times more area $(2^2=4)$.
 
-\begin{figure}[h]
-\label{eg-scale-triangle-1} 
+\begin{figure}[ht]
 \begin{center}
 \begin{tikzpicture}
     \path[coordinate] (0,0)  coordinate(A)
@@ -535,11 +529,11 @@ four times more area $(2^2=4)$.
 \caption{ \qquad
  Example \ref{eg:scale-triangle}. The big triangle has four times more
  area than the little one.}
+\label{eg-scale-triangle-1} 
 \end{center}
 \end{figure}
 
-\begin{figure}[h]
-\label{eg-scale-triangle-1} 
+\begin{figure}[ht]
 \begin{center}
 \begin{tikzpicture}
     \def\couleur{blue}
@@ -557,10 +551,9 @@ four times more area $(2^2=4)$.
 \caption{ \qquad
  A tricky way of solving example \ref{eg:scale-triangle}, explained in
  solution \#2.}
+\label{eg-scale-triangle-2} 
 \end{center}
 \end{figure}
-
-
 
 \vspace{1.5mm}
 
@@ -612,16 +605,12 @@ with the smaller triangle.)
 
 \vfill\pagebreak[4]
 
-\begin{exmp}\label{eg:scale-sphere}
+\begin{exmp}
+\label{eg:scale-sphere}
 In figure \ref{eg-scale-sphere}, the larger sphere has a radius that
 is five times greater. How many times greater is its volume?
 
-
-
-
 \usetikzlibrary{calc,fadings,decorations.pathreplacing}
-
-
 
 %% document-wide tikz options and styles
 
@@ -651,6 +640,7 @@ is five times greater. How many times greater is its volume?
  The big sphere has 125 times more
  volume than the little one.
  }
+\label{eg-scale-sphere}
 \end{figure}
 
 
@@ -685,14 +675,12 @@ Incorrect solution: The volume of a sphere is $V=(4/3)\pi r^3$, so
 
 \end{exmp}
 
-\begin{figure}[h] 
+\begin{figure}[ht] 
 \begin{center}
 \begin{tikzpicture}
 \draw[color=blue] (0,0) node[below] {\fontsize{48}{48}\selectfont S};
 \draw[color=blue] (2,-0.25) node[below] {\fontsize{36}{36}\selectfont S};
 \end{tikzpicture}
-
-%\includegraphics[width=0.2\textwidth]{./scaling/figs/eg-scale-letter-s}
 \caption{ \qquad %
 %
  Example \ref{eg:scale-letter-s}. The 48-point ``S'' has 1.78 times
@@ -707,7 +695,7 @@ Incorrect solution: The volume of a sphere is $V=(4/3)\pi r^3$, so
 
 \begin{exmp}
 \label{eg:scale-letter-s}
- The first letter ``S'' in figure \ref{eg-scale-letter-s} is in a
+ The first letter ``S'' in figure \ref{eg:scale-letter-s} is in a
 36-point font, the second in 48-point. How many times more
 ink is required to make the larger ``S''? (Points are a unit
 of length used in typography.)
@@ -730,11 +718,6 @@ of $(48/36)^2=1.78$.)
 \divider
 \vspace{2mm}
 
-Reasoning about ratios and proportionalities
-is one of the three essential mathematical skills, summarized on pp.\pageref{begin-skills}-\pageref{end-skills},
-that you need for success in this course.
-
-
 Galileo spends a lot of time in his dialog discussing
 what really happens when things break. He discusses
 everything in terms of Aristotle's now-discredited
@@ -749,10 +732,6 @@ Aristotle's explanation of why it is hard to break things an
 experimentally testable statement? If so, how could it be
 tested experimentally?
 \
-
-
-
-
 
 \section{Scaling applied to biology}
 \index{scaling!applied to biology}
@@ -799,6 +778,7 @@ more body mass will have only four times more surface area.
 \begin{center}
 \includegraphics[width=0.7\textwidth]{./scaling/figs/scaling-animals-2}
 \caption{ \qquad Scaling of animals' bodies related to metabolic rate and skeletal strength.}
+\label{scaling-animals-2}
 \end{center}
 \end{figure}
 
@@ -846,7 +826,7 @@ with a fixed shape, scaled up and down in the cases of
 individual specimens. The elephant's ears are an example of
 a change in shape necessitated by a change in scale.
 
-\begin{figure}[h] 
+\begin{figure}[ht] 
 \begin{center}
 \includegraphics[width=0.4\textwidth]{./scaling/figs/galileo-bones}
 \caption{ \qquad  Galileo's original drawing, showing
@@ -905,14 +885,12 @@ follow the rule $d\propto L^{3/2}$ fairly well. The vertebrae
 of the giant eland are as chunky as a coffee mug, while
 those of a Gunther's dik-dik are as slender as the cap of a pen.
 
-
-
 \statecomment{
 Single-celled animals must passively absorb nutrients and
 oxygen from their surroundings, unlike humans who have lungs
 to pump air in and out and a heart to distribute the
 oxygenated blood throughout their bodies. Even the cells
-composing the bodies of multicellular animals must absorb
+composing the bodies of multi-cellular animals must absorb
 oxygen from a nearby capillary through their surfaces. Based
 on these facts, explain why cells are always microscopic in size.
 
@@ -949,7 +927,7 @@ nevertheless one of the hallmarks of a person with a good
 education in science is the ability to make estimates that
 are likely to be at least somewhere in the right ballpark.
 
-On many occasions, physicists, other scientists, and engineers need to make approximations or guesstimates for a particular quantity. What is the distance to a certain destination? What is the approximate density of a given item? About how large a current will there be in a circuit? Many approximate numbers are based on formulae in which the input quantities are known only to a limited accuracy. As you develop problem-solving skills (that can be applied to a variety of fields through a study of physics), you will also develop skills at approximating. You will develop these skills through thinking more quantitatively, and by being willing to take risks. As with any endeavor, experience helps, as well as familiarity with units. These approximations allow us to rule out certain scenarios or unrealistic numbers. Approximations also allow us to challenge others and guide us in our approaches to our scientific world. Let us do two examples to illustrate this concept.
+On many occasions, physicists, other scientists, and engineers need to make approximations or guesstimates for a particular quantity. What is the distance to a certain destination? What is the approximate density of a given item? About how large a current will there be in a circuit? Many approximate numbers are based on formulae in which the input quantities are known only to a limited accuracy. As you develop problem-solving skills (that can be applied to a variety of fields through a study of physics), you will also develop skills at approximating. You will develop these skills through thinking more quantitatively, and by being willing to take risks. As with any endeavor, experience helps, as well as familiarity with units. These approximations allow us to rule out certain scenarios or unrealistic numbers. Approximations also allow us to challenge others and guide us in our approaches to our scientific world. Let us do two examples to illustrate this concept.
 
 In many such situations, it is often only necessary to get
 an answer that is off by no more than a factor of ten in
@@ -1003,30 +981,12 @@ or volume, you are much better off estimating linear
 dimensions, and computing volume from the linear dimensions.
 Here's a better solution to the problem about the tomato truck:
 
-%\piccaption{ \qquad Albert Einstein, and his mustache, problem \ref{hw:hairmass}.}
 \piccaption{ \qquad 
 Can you guess how many jelly beans are in the jar? If you try to guess directly, you will almost certainly underestimate. The right way to do it is to estimate the linear dimensions, then get the volume indirectly.
 See problem \ref{hw:jelly-beans}, p.~\pageref{hw:jelly-beans}.}
 \parpic[r]{\includegraphics[width=0.3\textwidth]{./scaling/figs/jelly-beans_1.jpg} \label{jelly-beans}}
 
-
-%\begin{figure}[h] 
-%\begin{center}
-%\includegraphics[width=0.4\textwidth]{./scaling/figs/jelly-beans}
-%\caption{ \qquad 
-%Can you guess how many jelly beans are in the jar? If you try to guess directly, you will almost certainly unde%restimate. The right way to do it is to estimate the linear dimensions, then get the volume indirectly.
-%See problem \ref{hw:jelly-beans}, p.~\pageref{hw:jelly-beans}.}
-
-%\end{center}
-%\end{figure}
-
-%\begin{figure}[h] 
-
 \vspace{1.5mm}
-
-
-
-
 
 \begin{exmp}
 Cost of transporting tomatoes (correct solution): 
@@ -1086,11 +1046,6 @@ gives a mass of about $2\times10^5\ \kgunit$, or 200 metric tons.
 \piccaption{ \qquad }
 \parpic[r]{\includegraphics[width=0.4\textwidth]{./scaling/figs/amphicoelias}}
 
-
-
-
-
-
 The following list summarizes the strategies for getting a
 good order-of-magnitude estimate.
 
@@ -1110,10 +1065,7 @@ $0.01\ \munit^2$ of leather, then you have probably made a mistake
 with conversion factors somewhere.
 \end{enumerate}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \section{Summary}
 
@@ -1157,7 +1109,6 @@ $4000\ \text{people}/\zu{km}^2$. That of San Francisco is about
 $6000\ \text{people}/\zu{km}^2$. How many times farther away is the average
 person's nearest neighbor in LA than in San Francisco?
 The answer is not 1.5. 
-
 
 \item 
  A hunting dog's nose has about 10 square inches of active
@@ -1227,16 +1178,11 @@ similar way: the B0 box has a volume of one cubic meter, two
 B1 boxes fit exactly inside an B0 box, and so on. What would
 be the dimensions of a B0 box? 
 
-
-
-
-
-
 \vspace{1.5mm}
 \item 
  Estimate the mass of one of the hairs in Albert
 Einstein's mustache, in units of kg.
-
+\label{hw:hairmass}
 
 \piccaption{ \qquad Albert Einstein, and his mustache, problem \ref{hw:hairmass}.}
 \parpic[r]{\includegraphics[width=0.3\textwidth]{./scaling/figs/einstein} \label{hairmass}}
@@ -1264,10 +1210,6 @@ unavailable for storing data. The radius of the central
 circle is about 35\% of the outer radius of the data-storing area.
 What percentage of the CD's area is therefore lost? 
 
-
-
-
-
 \newcommand{\tikzAngleOfLine}{\tikz@AngleOfLine}
   \def\tikz@AngleOfLine(#1)(#2)#3{%
   \pgfmathanglebetweenpoints{%
@@ -1275,8 +1217,6 @@ What percentage of the CD's area is therefore lost?
     \pgfpointanchor{#2}{center}}
   \pgfmathsetmacro{#3}{\pgfmathresult}%
  }
-
-
 
 \begin{tikzpicture}
     \coordinate (A) at (1,1);
@@ -1307,21 +1247,14 @@ What percentage of the CD's area is therefore lost?
 \end{tikzpicture}
 \label{triangle-formula}
 
-
-
-
 \item
 The one-liter cube in the photo has been marked off into smaller
 cubes, with linear dimensions one tenth those of the big one.
 What is the volume of each of the small cubes?
+\label{hw:liter-cube}
 
 \piccaption{ \qquad Problem \ref{hw:liter-cube}.}
 \parpic[r]{\includegraphics[width=0.3\textwidth]{./scaling/figs/hw-liter-cube} \label{liter-cube}}
-
-
-
-
-
 
 \vspace{1.5mm}
 
@@ -1352,6 +1285,7 @@ in your intestines, and compare with the number of human cells in your body, whi
 believed to be roughly on the order of $10^{13}$. (c) Interpreting your result from part b,
 what does this tell you about the size of a typical human cell compared to the size of
 a typical bacterial cell?
+\label{hw:e-coli}
 
 
 \piccaption{ \qquad Problem \ref{hw:e-coli}.}
@@ -1395,18 +1329,16 @@ see it from the outside.) So far we haven't received answering signals from alie
 but as time goes on, the sphere will expand as suggested by the dashed outline, reaching more and more stars that might harbor extraterrestrial
 life. Approximately what year will it be when the sphere has expanded to fill a volume 100 times greater than
 the volume it fills today in 2010?
-
+\label{hw:seti-volume}
 
 \piccaption{ \qquad Problem \ref{hw:seti-volume}.}
 \parpic[r]{\includegraphics[width=0.4\textwidth]{./scaling/figs/seti-volume} \label{seti-volume}}
 
-
-
 \vspace{1.5mm}
 
 \item
-Estimate the number of jellybeans in figure \ref{jelly-beans} on p.~\pageref{fig:jelly-beans}.
-
+Estimate the number of jellybeans in figure \ref{jelly-beans} on p.~\pageref{jelly-beans}.
+\label{hw:jelly-beans}
 
 \item 
 At the grocery store you will see oranges packed neatly in stacks.
@@ -1424,13 +1356,8 @@ with the closest random packing. What is the diameter of the largest ball that
 could be sold in boxes of the same size, packed systematically, so that there
 would be the same number of balls per box?
 
-
-
-
 \piccaption{ \qquad Problem \ref{hw:golf-ball-packing}.}
-\parpic[r]{\includegraphics[width=0.24\textwidth]{./scaling/figs/oranges.jpg}\label{golf-ball-packing}}
-
-
+\parpic[r]{\includegraphics[width=0.24\textwidth]{./scaling/figs/oranges.jpg}\label{hw:golf-ball-packing}}
 
 \vspace{1.5mm}
 

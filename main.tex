@@ -1,5 +1,4 @@
-\documentclass[paper=letter,fontsize=11pt,titlepage,openany,twoside,
-numbers=noenddot,index=totoc]{scrbook}
+\documentclass[paper=letter,fontsize=11pt,titlepage,openany,twoside, numbers=noenddot,index=totoc]{scrbook}
 %\usepackage[dvips]{graphicx}
 \usepackage{etex}
 \usepackage{graphics}
@@ -19,6 +18,13 @@ numbers=noenddot,index=totoc]{scrbook}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{empheq}
+
+
+\usepackage{mathpazo}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+%%\usepackage{pslatex}
+
 
 \usepackage{xcolor}
 \usepackage[english]{babel}
@@ -42,6 +48,7 @@ numbers=noenddot,index=totoc]{scrbook}
 \usetikzlibrary{intersections}
 \usetikzlibrary{matrix}
 \usetikzlibrary{snakes}
+%\usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{calc}
 \usetikzlibrary{backgrounds}
 \usepackage{picins}
@@ -52,24 +59,24 @@ numbers=noenddot,index=totoc]{scrbook}
 
 \lstloadlanguages{Gnuplot}
 \usepackage[pdfproducer={pdflatex},
-            pdfauthor={Martin Veillette},pdftitle={Mathematical Methods in Physics},
+            pdfauthor={Martin Veillette},pdftitle={ Applied Mathematics for Engineering and Physics},
             pdfsubject={Mathematical Methods in Physics},pdfkeywords={Math} {Physics},
             pdfdisplaydoctitle=true,bookmarks=true,pdfborder={0 0 0},colorlinks=true,linkcolor=cyan, urlcolor=blue,
             bookmarksnumbered=true,hyperindex,pdfpagelabels]{hyperref}
-%\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
-\usepackage{breakurl}
+
+%\usepackage{breakurl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% for introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newtheorem{ex}{\bf Example}[section]
-\newtheorem{optionaltopic}{\bf Optional Topic}[section]
-\newtheorem{homework}{\bf Homework}[section]
-\newtheorem{eg}{\bf Example}[section]
-\newtheorem{selfcheck}{\bf Selfcheck}[section]
-\newtheorem{dq}{\bf Discussion Section}[section]
-\newtheorem{indentedblock}{\bf Discussion Section}[section]
-\newtheorem{hwsection}{\bf Discussion Section}[section]
+\newtheorem{ex}{\textbf{Example}}[section]
+\newtheorem{optionaltopic}{\textbf{Optional Topic}}[section]
+\newtheorem{homework}{\textbf{Homework}}[section]
+\newtheorem{eg}{\textbf{Example}}[section]
+\newtheorem{selfcheck}{\textbf{Selfcheck}}[section]
+\newtheorem{dq}{\textbf{Discussion Section}}[section]
+\newtheorem{indentedblock}{\textbf{Discussion Section}}[section]
+\newtheorem{hwsection}{\textbf{Discussion Section}}[section]
 
 \newcommand{\hwendpart}{} % DONT KNOW
 \newcommand{\answercheck}{} % DONT KNOW
@@ -265,24 +272,22 @@ numbers=noenddot,index=totoc]{scrbook}
 \topmargin 0in
 \usepackage{amssymb,amsmath,amsthm,fancyhdr,supertabular,longtable,hhline}
 \usepackage{colortbl}
-\usepackage{multirow}  % apparently it was missed by stitz
 
 \usepackage{import,boxedminipage}
 \usepackage{chapterfolder}
 \usepackage[metapost,truebbox]{mfpic}
+
 %\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
 \usepackage[all]{hypcap}
 \usepackage{cancel}
-\usepackage{sectsty}
+
 \usepackage{textcomp}
-\allsectionsfont{\mdseries \scshape}
+
 \definecolor{ResultColor}{gray}{0.9}
 \theoremstyle{definition}  % this prevents the text in definitions, theorems, and corollaries from being italicized
-%\newtheorem{defn}{Definition}[chapter]
-%\newtheorem{thm}{Theorem}[chapter]
-%\newtheorem{cor}[thm]{Corollary}
+
 \newtheorem{eqn}{Equation}[chapter]
-%\newtheorem{ex}{Example}[section]
+
 \setlength{\parindent}{0in}
 \newcommand{\bbm}{\begin{boxedminipage}{6.41in}}
 \newcommand{\ebm}{\end{boxedminipage}}
@@ -422,14 +427,14 @@ Dr.~Martin \textsc{Veillette}
  
 %Put the main chapters here
 \input{./introduction/introduction.tex}
-%\input{./scaling/scaling.tex}  % need work
-%\input{./statistics/statistics.tex}  % need work
-%\include{./right_triangle/trigbook-chapter1} %god
-%\include{./general_triangle/trigbook-chapter2} %good
-%\input{./radian/trigbook-chapter4.tex} %good
-%\import{./graphing_and_inverse/}{trigbook-chapter5} %good
-%\import{./additional_topics/}{trigbook-chapter6} %good
-% %\import{./AppExt/}{appext}
+\input{./scaling/scaling.tex}  % good
+\input{./statistics/statistics.tex}  % good
+\include{./right_triangle/trigbook-chapter1} %good
+\include{./general_triangle/trigbook-chapter2} %good
+\input{./radian/trigbook-chapter4.tex} %good
+\import{./graphing_and_inverse/}{trigbook-chapter5} %good
+%%\import{./additional_topics/}{trigbook-chapter6} %need to import
+%% %\import{./AppExt/}{appext}
 
 %\import{./vector/}{calc3book-chapter1_B} % need to correct some references
 

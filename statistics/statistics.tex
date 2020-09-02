@@ -87,20 +87,20 @@ Say you want to determine the time of fall of steel balls in a cylinder filled w
 
 \index{apparent effect}
 
-A difference like that is called an {\bf apparent effect}; that is,
+A difference like that is called an \textbf{apparent effect}; that is,
 there might be something going on, but we are not yet sure.  There are
 several questions we still want to ask:
 
 \begin{itemize}
 
-\item If the two experiments have different means, what about other {\bf
-  summary statistics}, like median and variance?  Can we be more
+\item If the two experiments have different means, what about other 
+  \textbf{summary statistics}, like median and variance?  Can we be more
   precise about how they differ?
 \index{summary statistic}
 
 \item Is it possible that the difference we saw could occur by chance,
   even if the experiments we compared were actually the same?  If so,
-  we would conclude that the effect was not {\bf statistically
+  we would conclude that the effect was not \textbf{statistically
     significant}.
 \index{statistically significant}
 \index{significance}
@@ -108,7 +108,7 @@ several questions we still want to ask:
 
 \item Is it possible that the apparent effect is due to selection bias or
   some other error in the experimental setup?  If so, then we might
-  conclude that the effect is an {\bf artifact}; that is, something we
+  conclude that the effect is an \textbf{artifact}; that is, something we
   created (by accident) rather than found. 
 \index{artifact}
 
@@ -122,9 +122,9 @@ Answering these questions will take most of the rest of this chapter.
 Of course, not all measurements have errors. If asked how many people there are in a room, one can usually give an exact number as an answer. However, if we want to know how many atoms there are in a room, giving an exact answer is nearly impossible, as the animation below illustrates.
 
 In the physical science, you will deal mostly with measurements of the second kind. Since you will not be able to measure things with arbitrarily high precision, you should know how to quantify the imprecision of your results.
- Under different circumstances, the error that we are off by may vary greatly, so it is very useful to have a measurement of the quality of the measurement, which we call the {\bf error analysis}. First we choose a physical {\bf quantity} $X$ to determine and then we perform an {\bf experiment} which is a set of measurements of this quantity. Each {\bf measurement} gives a {\bf value} $x_i$. The {\bf outcome} $O_X$ of the experiment is the set of all results. Finally, we present the {\bf result} $\bar{x}$, which is the mean of the results in the outcome. The {\bf true value} $X_o$ is the value that would be measured if our experiment had no error. A good experiment will produce a result very close to the true value, $\bar{x} \cong X_o$.
+ Under different circumstances, the error that we are off by may vary greatly, so it is very useful to have a measurement of the quality of the measurement, which we call the \textbf{error analysis}. First we choose a physical \textbf{quantity} $X$ to determine and then we perform an \textbf{experiment} which is a set of measurements of this quantity. Each \textbf{measurement} gives a \textbf{value} $x_i$. The \textbf{outcome} $O_X$ of the experiment is the set of all results. Finally, we present the \textbf{result} $\bar{x}$, which is the mean of the results in the outcome. The \textbf{true value} $X_o$ is the value that would be measured if our experiment had no error. A good experiment will produce a result very close to the true value, $\bar{x} \cong X_o$.
 
-Sources of error are commonly classified as either {\it systematic error} or {\it random error}. A {\bf systematic error} is any error that skews the measured values by the same amount in the same direction every time.\footnote{If an error source skews the measured values by a roughly constant amount in one direction, but has a slightly different effect each time, then it is probably an error source that has both a systematic and a random component.} For example, if you were making measurements with a stopwatch that always started at 0.01s instead of 0.00s, then you would have a systematic error. A {\bf random error} is any error that is not a systematic error. For example, if you were measuring an object with a ruler and you were off by a fraction of a millimeter, then you would have a random error. 
+Sources of error are commonly classified as either \textit{systematic error} or \textit{random error}. A \textbf{systematic error} is any error that skews the measured values by the same amount in the same direction every time.\footnote{If an error source skews the measured values by a roughly constant amount in one direction, but has a slightly different effect each time, then it is probably an error source that has both a systematic and a random component.} For example, if you were making measurements with a stopwatch that always started at 0.01s instead of 0.00s, then you would have a systematic error. A \textbf{random error} is any error that is not a systematic error. For example, if you were measuring an object with a ruler and you were off by a fraction of a millimeter, then you would have a random error. 
 
 Random error usually skews measured values higher and lower with equal probability. If this is the case, then it possible to eliminate it by averaging, which we will denote averaging by enclosing the expression in angle brackets or covering it with a bar. First, we represent the value of a measurement by breaking it down into three components.
 
@@ -181,7 +181,7 @@ but we will maintain this distinction:
 
 \item An ``average'' is one of many summary statistics you might
   choose to describe the typical value or the
-  {\bf central tendency} of a sample.
+  \textbf{central tendency} of a sample.
 \index{central tendency}
 
 \end{itemize}
@@ -212,19 +212,17 @@ there is no typical pumpkin.
 \index{distribution}
 
 Summary statistics are concise, but dangerous, because they obscure
-the data.  An alternative is to look at the {\bf distribution} of the
+the data.  An alternative is to look at the \textbf{distribution} of the
 data, which describes how often each value appears.
 
-The most common representation of a distribution is a {\bf histogram},
+The most common representation of a distribution is a \textbf{histogram},
 which is a graph that shows the frequency or probability
-of each value.\index{histogram}. A {\bf histogram} is a chart made by stacking up squares in columns based on the values of measurements, with one square added per measurement. This makes the more frequent results form taller columns.
+of each value.\index{histogram}. A \textbf{histogram} is a chart made by stacking up squares in columns based on the values of measurements, with one square added per measurement. This makes the more frequent results form taller columns.
 
 \begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
-\begin{axis}[
-ybar interval,
-xtick={1,2,3,4,5,6,7,8},% reset from ybar interval
+\begin{axis}[ybar interval, xtick={1,2,3,4,5,6,7,8},% reset from ybar interval
 %xticklabel=
 %{$[\pgfmathprintnumber\tick,%
 %\pgfmathprintnumber\nexttick)$}
@@ -242,20 +240,20 @@ xtick={1,2,3,4,5,6,7,8},% reset from ybar interval
 \end{center}
 \end{figure}
 
-In this figure, each square represents one measurement of a quantity $X$. The value of the measurement, which we call $x$, is the number of the column that it lies in. We can write the value of the $i^{th}$ measurement as $x_i$. Most quantities that we measure are not always integers, but we can still use histograms by making each column a {\bf bin} that collects any value falling within a specific range. We will refer to the shape that the histogram forms as a {\bf distribution} of measurements. 
+In this figure, each square represents one measurement of a quantity $X$. The value of the measurement, which we call $x$, is the number of the column that it lies in. We can write the value of the $i^{th}$ measurement as $x_i$. Most quantities that we measure are not always integers, but we can still use histograms by making each column a \textbf{bin} that collects any value falling within a specific range. We will refer to the shape that the histogram forms as a \textbf{distribution} of measurements. 
 
-There are two distinct measures of the error of a result, {\it accuracy} and {\it precision}. The {\bf accuracy} tells you how close your result is to the accepted result. Accuracy is almost always expressed in terms of the {\bf percent error}
+There are two distinct measures of the error of a result, \textit{accuracy} and \textit{precision}. The \textbf{accuracy} tells you how close your result is to the accepted result. Accuracy is almost always expressed in terms of the \textbf{percent error}
 \footnote{Percent error is also called percent deviation}, which is given by 
 \begin{equation}\frac{\textrm{Experimental Result} - \textrm{Accepted Result}}{\textrm{Accepted Result}} \times 100 \end{equation}
 
-The {\bf precision} tells you how consistent your measured values are, with higher precision indicating that all of your data points are clustered around one value. Effectively, precision is a measure of the width of the distribution for the experiment. In order to quantify the width of the distribution we need a formula that accounts for the contribution to the spread by each measured value. The first thing that comes to mind is the {\bf deviation} of each value, which is given by 
+The \textbf{precision} tells you how consistent your measured values are, with higher precision indicating that all of your data points are clustered around one value. Effectively, precision is a measure of the width of the distribution for the experiment. In order to quantify the width of the distribution we need a formula that accounts for the contribution to the spread by each measured value. The first thing that comes to mind is the \textbf{deviation} of each value, which is given by 
 \begin{equation} d_i \equiv x_i - \bar{x} \end{equation}
 
-but this won't help to much because if we average the deviation over all the values, we will usually get an answer close to zero. This is because random error usually is equally likely to skew the values in either direction from the average and this will cause the deviations to cancel positive with negative. But there is a quick fix for this---we can just take the absolute value of the deviation and average that. This defines the {\bf mean deviation} \footnote{The mean deviation is also called the average deviation}
+but this won't help to much because if we average the deviation over all the values, we will usually get an answer close to zero. This is because random error usually is equally likely to skew the values in either direction from the average and this will cause the deviations to cancel positive with negative. But there is a quick fix for this---we can just take the absolute value of the deviation and average that. This defines the \textbf{mean deviation} \footnote{The mean deviation is also called the average deviation}
 \begin{equation} \alpha_{O_X} = \frac{1}{N} \sum_i |x_i - \bar{x}| \end{equation}
 where the subscript $O_X$ indicates that the expression is computed using the outcome of the experiment measuring the quantity $X$.
 
-The mean deviation is not used very often. Instead of taking the absolute value, the square of the deviation is used. The square is again always positive, but it is more convenient than the absolute values because squares are easier to work with analytically and there are other advantages that we will see soon. Averaging the square of the deviation gives us the {\bf variance} 
+The mean deviation is not used very often. Instead of taking the absolute value, the square of the deviation is used. The square is again always positive, but it is more convenient than the absolute values because squares are easier to work with analytically and there are other advantages that we will see soon. Averaging the square of the deviation gives us the \textbf{ variance} 
 \footnote{This is the biased or population standard deviation. There are arguments that it is better to divide by N-1 instead of N in the average, but we will not pursue that here}
 \begin{equation}\sigma^2_{O_X} = \frac{1}{N} \sum_{i=1}^N \left(x_i - \bar{x}\right)^2  \end{equation}
 %
@@ -267,7 +265,7 @@ The mean deviation is not used very often. Instead of taking the absolute value,
 % = \langle x_i^2 \rangle - \langle x_i \rangle^2\]
 
 In the same way that the mean is intended to describe the central
-tendency, variance is intended to describe the {\bf spread}.
+tendency, variance is intended to describe the \textbf{spread}.
 The variance of a set of values is\footnote{You may have seen or learned another definition of the variance in which $N-1$ is replaced by $N$. Technically the variance must include the $N$ factor whereas the sample variance includes the $N-1$ factor. The sample variance is an ``unbias'' estimator of the variance. It's more of a mathematical subtlety, which does not affect our reasoning here. In any case, the difference between the two is negligible for large $N$. See
 \url{http://wikipedia.org/wiki/Bias_of_an_estimator} for more information.
  }
@@ -288,8 +286,7 @@ The variance is our previous example is
 
 
 
-The square root of variance, $s$, is called the {\bf
-  standard deviation}.
+The square root of variance, $s$, is called the \textbf{ standard deviation}.
 \index{deviation}
 \index{standard deviation}
 
@@ -301,7 +298,7 @@ in this case the units are pounds.
 
 
 
-Now we want to consider the shape that a histogram of the outcome would take if we had performed an infinite number of measurements. This limiting distribution would give us a sense for what the error itself really looks like instead of just seeing a few pieces of the puzzle. Without further information about the measurement process, we can't be sure what the histogram would look like. But the {\bf central limit theorem} proves that if the measurement process is affected by many independent random errors, then the limiting distribution of an infinite number of measurements will be approximately a {\it Gaussian distribution}. Whether or not this is the reason, it is true that very often random error in measurements produces a {\bf Gaussian distribution}, which is a bell-shaped curve with the functional form
+Now we want to consider the shape that a histogram of the outcome would take if we had performed an infinite number of measurements. This limiting distribution would give us a sense for what the error itself really looks like instead of just seeing a few pieces of the puzzle. Without further information about the measurement process, we can't be sure what the histogram would look like. But the \textbf{central limit theorem} proves that if the measurement process is affected by many independent random errors, then the limiting distribution of an infinite number of measurements will be approximately a \textit{Gaussian distribution}. Whether or not this is the reason, it is true that very often random error in measurements produces a \textbf{Gaussian distribution}, which is a bell-shaped curve with the functional form
 \begin{equation} f(x) = \frac{1}{\sigma \sqrt{2 \pi}}  e^{-\frac{(x-\mu)^2}{2\sigma^2}}\end{equation}
 where $\sigma$ is the width parameter, and $\mu$ is the center of the peak. These parameters are just numbers to plug into the formula, but their symbols were chosen because $\sigma$ is the standard deviation of the limiting distribution and $\mu$ is the average of the limiting distribution.
 
@@ -351,9 +348,9 @@ if the density is not constant, you have to integrate over volume.
 % \[ P(-0.5 \le X < 0.5) = \int_{-0.5}^{0.5} PDF_{X}(x) dx \]
 
 
-In this context, {\bf frequency} means the number of times a value
+In this context, \textbf{frequency} means the number of times a value
 appears in a dataset---it has nothing to do with the pitch of a sound
-or tuning of a radio signal.  A {\bf probability} is a frequency expressed
+or tuning of a radio signal.  A \textbf{probability} is a frequency expressed
 as a fraction of the sample size, $N$.
 \index{frequency}
 \index{probability}
@@ -362,13 +359,13 @@ as a fraction of the sample size, $N$.
 
 The result is a dictionary that maps from values to frequencies.
 To get from frequencies to probabilities, we divide through by $N$,
-which is called {\bf normalization}:\index{normalization}
+which is called \textbf{normalization}:\index{normalization}
 
 \begin{equation}
 \text{Relative frequency} = \text{the number of readings in the bin}
 \end{equation}
 
-The normalized histogram is called a {\bf PF}, which stands for
+The normalized histogram is called a \textbf{PF}, which stands for
 ``probability function''; that is, it's a function that maps from
 values to probabilities.
 \index{PF}
@@ -384,9 +381,7 @@ Histograms and probability functions are most often plotted as bar charts.  Figu
 \begin{center}
 \begin{tikzpicture}
   \centering
-  \begin{axis}[
-        ybar,
-    height=6cm,
+  \begin{axis}[ybar, height=6cm,
     width=10cm,
     enlarge y limits=false,
     axis lines*=left,
@@ -415,7 +410,7 @@ apparent:
 \begin{description}
 
 \item[Mode:] The most common value in a distribution is called the
-  {\bf mode}.  In Figure~\ref{pendulum} there is a clear mode at 2.4 s.  In this case, the mode is the summary statistic that does
+  \textbf{mode}.  In Figure~\ref{pendulum} there is a clear mode at 2.4 s.  In this case, the mode is the summary statistic that does
   the best job of describing the typical value.
 \index{mode}
 
@@ -423,7 +418,7 @@ apparent:
   drops off quickly to the left and more slowly to the right.  In statistics this is often referred to as a skew. 
 \index{shape}
 
-\item[Outliers:] Values far from the mode are called {\bf outliers}.
+\item[Outliers:] Values far from the mode are called \textbf{outliers}.
   Many of them are probably due to errors, either in the reporting
   or recording of data.
 \index{outlier}
@@ -445,24 +440,16 @@ of values in the probability function is small.
 \begin{figure}[h]
 \begin{tikzpicture}
   \centering
-  \begin{axis}[
-        ybar,
-    height=6cm,
-    width=13cm,
-    enlarge y limits=false,
-    axis lines*=left,
-    ymin=0,
+  \begin{axis}[ybar,    height=6cm,
+    width=13cm,    enlarge y limits=false,
+    axis lines*=left,    ymin=0,
     ymax=0.3,
-     legend style={at={(0.5,-0.4)},
+    legend style={at={(0.5,-0.4)},
         anchor=north,legend columns=-1},
         ylabel={Frequency},
         xlabel={Fall Time (s)},
-     xtick=data,
-        nodes near coords,
-    every node near coord/.append style={
-        anchor=mid west,
-        rotate=70
-    }
+     xtick=data,    nodes near coords,
+    every node near coord/.append style={ anchor=mid west,    rotate=70    }
     ]
     \addplot coordinates { (3.3, 0.01) (3.4, 0.04) (3.5, 0.11) (3.6, 0.206) (3.7, 0.252)(3.8, 0.20) (3.9, 0.113)  (4.0, 0.0417)  };
         \addplot coordinates { (3.3, 0.015) (3.4, 0.05) (3.5, 0.13) (3.6, 0.236) (3.7, 0.242)(3.8, 0.18) (3.9, 0.103)  (4.0, 0.0317)   };
@@ -512,13 +499,13 @@ When presenting results it is desirable to include an estimate of the error righ
 
  It is true that there is a reasonable chance that the true value will not fall within one standard deviation of the result, but under normal circumstances the only distance that we could be sure the true value lies within would be far too large to be of use. This is because there is usually a slight probability that any given measurement will give a value that is very far from the true value. Therefore it is convenient to just state results as \begin{equation} X_o = \bar{x} \pm \sigma_{mean X} \end{equation}
 
-After this form is obtained, it can be compared with other experiments for {\it consistency}. Two results $X_o = \bar{x} \pm \sigma_{mean X}$ and $X_o' = \bar{x}' \pm \sigma_{mean X}'$ are {\bf consistent} if  $|\bar{x} - \bar{x}'| \leq \sigma_{mean X} + \sigma_{mean X}'$.\footnote{This definition can be relaxed a little because of the fact that there is a decent chance that the true value lies outside one standard deviation in both experiments.}
+After this form is obtained, it can be compared with other experiments for \textit{consistency}. Two results $X_o = \bar{x} \pm \sigma_{mean X}$ and $X_o' = \bar{x}' \pm \sigma_{mean X}'$ are \textbf{consistent} if  $|\bar{x} - \bar{x}'| \leq \sigma_{mean X} + \sigma_{mean X}'$.\footnote{This definition can be relaxed a little because of the fact that there is a decent chance that the true value lies outside one standard deviation in both experiments.}
 In other words, two results are consistent if and only if the half width at half maximum of their probability distributions overlap. 
 
 
 
 \section{Worst-Case Error Propagation}
-So far we have seen the standard deviation used on the outcome of an experiment to get a sense of the spread of the data. It is also possible to estimate the expected standard deviation of the outcome by accounting for each of the random error sources, which is called {\bf error propagation}. It will take some mathematical work to derive the error propagation formula, but first we need to know how to account for the random error sources. First of all we must assume that we are aware of all the random error sources. This is usually not a problem because we just treat each measured quantity as having one combined random error source, which may in fact include many independent error sources. If we are directly measuring the quantity of interest, then that is all there is to it---the expected standard deviation is the standard deviation of the distribution of measurements. The only problem is that we do not know the distribution of measurements before we make them, so how can we know it's standard deviation? This is where we can make an estimate. The {\bf least count} is the size of the smallest division on the measuring device. A competent experimenter using working equipment should rarely make errors larger than the least count. In fact, you should always be able to round to the correct division, so you will probably always be within half of the least count. For example, on a normal ruler the least count is 1mm and you should never be off by more than 0.5mm. But clearly there is a good chance that your measured value will differ from the true value by 0.1mm, so there is some nonzero spread to the distribution of measurements. A good rule to use is to assume the standard deviation of your distribution of measurements is half of the least count. This means that about $68\%$ of your measurements lie within half a least count from the true value. Note that this asssumes that the systematic error has been brought down to a negligible level.
+So far we have seen the standard deviation used on the outcome of an experiment to get a sense of the spread of the data. It is also possible to estimate the expected standard deviation of the outcome by accounting for each of the random error sources, which is called \textbf{error propagation}. It will take some mathematical work to derive the error propagation formula, but first we need to know how to account for the random error sources. First of all we must assume that we are aware of all the random error sources. This is usually not a problem because we just treat each measured quantity as having one combined random error source, which may in fact include many independent error sources. If we are directly measuring the quantity of interest, then that is all there is to it---the expected standard deviation is the standard deviation of the distribution of measurements. The only problem is that we do not know the distribution of measurements before we make them, so how can we know it's standard deviation? This is where we can make an estimate. The \textbf{least count} is the size of the smallest division on the measuring device. A competent experimenter using working equipment should rarely make errors larger than the least count. In fact, you should always be able to round to the correct division, so you will probably always be within half of the least count. For example, on a normal ruler the least count is 1mm and you should never be off by more than 0.5mm. But clearly there is a good chance that your measured value will differ from the true value by 0.1mm, so there is some nonzero spread to the distribution of measurements. A good rule to use is to assume the standard deviation of your distribution of measurements is half of the least count. This means that about $68\%$ of your measurements lie within half a least count from the true value. Note that this asssumes that the systematic error has been brought down to a negligible level.
 
 So we have handled the case where we are directly measuring the quantity of interest, but that is not usually how experiments are done. Most experiments involve several measurements whose results are plugged into an equation to get the final result. For example, if you are measuring the area of a rectangle, you must measure the width and the height, and then plug these results into the formula $A = w*h$. The error in measuring the width and height is known based on the least count, but what amount of error do these error sources produce in the result for the area? This is where the error propagation formulas are needed.
 
@@ -527,7 +514,7 @@ There is only one error propagation formula that you need to know, which will be
 \[ F(X,Y) = X + Y \Rightarrow \sigma_F = \sqrt{\sigma^2_X + \sigma^2_Y} \]
 \[ F(X,Y) = X*Y \Rightarrow \frac{\sigma_F}{|\bar{f}|} =\sqrt{ \left(\frac{\sigma_X}{|\bar{x}|}\right)^2 + \left(\frac{\sigma_Y}{|\bar{y}|}\right)^2} \]
 
-Error in the form $\sigma_X/\bar{x}$ is called {\bf relative error}. In contrast, error in the regular form $\sigma_X$ is called {\bf absolute error}.
+Error in the form $\sigma_X/\bar{x}$ is called \textbf{relative error}. In contrast, error in the regular form $\sigma_X$ is called \textbf{absolute error}.
 We will not be using this simple form of error propagation because it usually gives an overestimate of the error because it is not so likely that the results of both parameters will be off from the true value in the same direction.
 
 
@@ -536,7 +523,7 @@ We will not be using this simple form of error propagation because it usually gi
 
 In this section we look at relationships between variables.  For
 example, we have a sense that height is related to weight; people who
-are taller tend to be heavier.  {\bf Correlation} is a description of
+are taller tend to be heavier.  \textbf{Correlation} is a description of
 this kind of relationship.
 \index{correlation}
 
@@ -548,7 +535,7 @@ in the same units, they come from different distributions.
 
 
 
-The standard solution to this problem is to transform all values to {\bf standard scores}.  This leads to
+The standard solution to this problem is to transform all values to \textbf{standard scores}.  This leads to
 the Pearson coefficient of correlation.
 \index{standard scores}
 \index{Pearson coefficient of correlation}
@@ -564,7 +551,7 @@ scores by subtracting the mean and dividing by the standard deviation:
 \index{standard deviation}
 
 The numerator is a deviation: the distance from the mean.  Dividing by
-$\sigma$~{\bf normalizes} the deviation, so the values of $Z$~are
+$\sigma$~\textbf{normalizes} the deviation, so the values of $Z$~are
 dimensionless (no units) and their distribution has mean 0 and
 variance 1.
 The absolute value of $z_i$ represents the distance between the raw score and the population mean in units of the standard deviation.
@@ -581,7 +568,7 @@ $z$ is negative when the raw score is below the mean, positive when above.
 \index{covariance}
 \index{deviation}
 
-{\bf Covariance} is a measure of the tendency of two variables
+\textbf{Covariance} is a measure of the tendency of two variables
 to vary together.  If we have two series, $X$~and $Y$, their
 deviations from the mean are
 
@@ -630,7 +617,7 @@ The mean of these products is
 %
 \[ \rho = \frac{1}{n} \sum_i^n p_i \]
 %
-This value is called {\bf Pearson's correlation} after Karl Pearson,
+This value is called \textbf{Pearson's correlation} after Karl Pearson,
 an influential early statistician.  It is easy to compute and easy to
 interpret.  Because standard scores are dimensionless, so is $\rho$.
 \index{Pearson, Karl}
@@ -704,7 +691,7 @@ your data before blindly computing a correlation coefficient.
 
 Correlation coefficients measure the strength and sign of a
 relationship, but not the slope.  There are several ways to estimate
-the slope; the most common is a {\bf linear least squares fit}.  A
+the slope; the most common is a \textbf{linear least squares fit}.  A
 ``linear fit'' is a line intended to model the relationship between
 variables.  A ``least squares'' fit is one that minimizes the mean
 squared error (MSE) between the line and the data\footnote{See
@@ -721,7 +708,7 @@ expect each $y_{i}$ to be roughly $m x_i + b$.
 \index{residual}
 
 But unless the correlation is perfect, this prediction is only
-approximate.  The deviation, or {\bf residual}, is 
+approximate.  The deviation, or \textbf{residual}, is 
 
 \[ \epsilon_{i}~=~(m x_{i}+b)~-~y_{i} \]
 
@@ -810,16 +797,16 @@ it is.  Well, that depends on what it's for.  One way to evaluate a
 model is its predictive power.
 
 In the context of prediction, the quantity we are trying to guess is
-called a {\bf dependent variable} and the quantity we are using to
-make the guess is called an {\bf explanatory} or {\bf independent
+called a \textbf{dependent variable} and the quantity we are using to
+make the guess is called an \textbf{explanatory} or \textbf{independent
   variable}.
 \index{dependent variable}
 \index{explanatory variable}
 \index{independent variable}
 \index{coefficient!determination}
 
-To measure the predictive power of a model, we can compute the {\bf
-  coefficient of determination}, more commonly known as ``R-squared'':
+To measure the predictive power of a model, we can compute the 
+  \textbf{coefficient of determination}, more commonly known as ``R-squared'':
 %
 \[ R^2 = 1 - \frac{Var(\epsilon)}{Var(Y)}\]
 %
@@ -853,9 +840,9 @@ $R^2$ is often refer to as the correlation coefficient.
 
 In practice a calculator or computer is used to calculate the values $m, b$ and $R^2$.  For reference, in EXCEL, the regression coefficients can be found as
 
-\[b={\rm INTERCEPT}\left(Y_{ARRAY},X_{ARRAY}\right)\] 
-\[m={\rm SLOPE}(Y_{ARRAY},X_{ARRAY})\] 
-\[R^2={\rm RSQ}(Y_{ARRAY},X_{ARRAY})\]
+\[b= \textrm{INTERCEPT}\left(Y_{ARRAY},X_{ARRAY}\right)\] 
+\[m= \textrm{SLOPE}(Y_{ARRAY},X_{ARRAY})\] 
+\[R^2=\textrm{RSQ}(Y_{ARRAY},X_{ARRAY})\]
  
 It turns out that Excel has a particularly convenient utility for carrying out such calculations: A function called LINEST (which stands for LINE STatistics). To access the uncertainties in the slope and intercept do the following:
 
@@ -886,7 +873,7 @@ you {\em add the relative errors} of those quantities (Rules 4,5 below).
 %%\begin{table}[htp]
 \begin{center}
 \begin{tabular}{c l l}
-  & {\bf Relation} &{\bf Error} \\ \hline \\
+  & \textbf{Relation} &\textbf{Error} \\ \hline \\
 1. & $Z=cA$         & $\sigma(Z)=|c|\sigma(A)$  \\
 2. & $Z=A+B+C+\cdots$ & $\sigma(Z)=\sqrt{(\sigma(A))^2 + (\sigma(B))^2
   +(\sigma(C))^2 + \cdots}$ \\
